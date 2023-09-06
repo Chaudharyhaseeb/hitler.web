@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+body{
+    /* font-family: 'Alegreya Sans', sans-serif; */
+
+}
+.content{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.fontt{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+@media only screen and (max-widht:767px){
+    .navbar{
+        text-align: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+
+.nav-item :hover{
+    color: white;
+    background-color: #ab9f9f;
+}
+
+.ms{
+    height: 250px;
+}
+
+
+
+/* footer */
+.fontt{
+    font-family: 'Times New Roman', Times, serif;
+}
+.hc{
+    text-align: center;
+}
+
+.b1{
+    background-color: #ab9f9fe7;
+}
+.b2{
+    background-color: rgba(171, 159, 159, 255);
+}
+
+
+/* Contact Us */
+.titlepage {
+    padding-bottom: 60px;
+}
+
+.titlepage h2 {
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 55px;
+    color: #181616;
+    padding-bottom: 10px;}
+
+    /* End */
+   
+
+.main_form .contactus {
+    border: inherit;
+    padding: 0 15px;
+    margin-bottom: 25px;
+    width: 100%;
+    height: 68px;
+    background: #dbdada;
+    color: #969494;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.main_form .textarea {
+    border: inherit;
+    margin-bottom: 25px;
+    width: 100%;
+    background: #dbdada;
+    color: #969494;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 36px 15px 0 15px;
+    border-radius: 0;
+    height: 109px;
+}
+
+.main_form .send_btn {
+    font-size: 17px;
+    transition: ease-in all 0.5s;
+    background-color: #0c0909;
+    color: #fff;
+    height: 68px;
+    line-height: 68px;
+    max-width: 216px;
+    width: 100%;
+    display: block;
+    margin-top: 10px !important;
+    font-weight: 500;
+    margin: 0 auto;
+}
+
+.main_form .send_btn:hover {
+    background-color: #ab9f9f;
+    transition: ease-in all 0.5s;
+    color: #fff;
+}
+
+
+
+
+
+.hoverr:hover{
+    background-color: #ab9f9f;
+}
+
+.ftbg{
+    background-color: #ab9f9f;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.hccc{
+    
+    margin: 0;
+    /* padding-left: 30px; */
+    
+}

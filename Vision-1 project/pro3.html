@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="stylesheet" href="web.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    
+   
+    
+    
+    
+    .section-bg {
+        background-color: rgba(211, 211, 211, 0.283);
+    }
+    section {
+        padding: 60px 0;
+    }
+    .row-sm .col-md-6 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+  
+    ._boxzoom .zoom-thumb {
+        width: 90px;
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0px;
+    }
+    ._boxzoom .zoom-thumb ul.piclist {
+        padding-left: 0px;
+        top: 0px;
+    }
+    ._boxzoom ._product-images {
+        width: 80%;
+        display: inline-block;
+    }
+    ._boxzoom ._product-images .picZoomer {
+        width: 100%;
+    }
+    ._boxzoom ._product-images .picZoomer .picZoomer-pic-wp img {
+        left: 0px;
+    }
+    ._boxzoom ._product-images .picZoomer img.my_img {
+        width: 100%;
+    }
+    .piclist li img {
+        height:100px;
+        object-fit:cover;
+    }
+    
+   
+    ._product-detail-content {
+        background: #fff;
+        padding: 15px;
+        border: 1px solid lightgray;
+    }
+    ._product-detail-content p._p-name {
+        color: black;
+        font-size: 20px;
+        border-bottom: 1px solid lightgray;
+        padding-bottom: 12px;
+    }
+    .p-list span {
+        margin-right: 15px;
+    }
+    .p-list span.price {
+        font-size: 25px;
+        color: #318234;
+    }
+    ._p-qty > span {
+        color: black;
+        margin-right: 15px;
+        font-weight: 500;
+    }
+    ._p-qty .value-button {
+        display: inline-flex;
+        border: 0px solid #ddd;
+        margin: 0px;
+        width: 30px;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #fff;
+    }
+    
+    ._p-qty .value-button {
+        border: 0px solid #000;
+        height: 35px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    ._p-qty input#number {
+        text-align: center;
+        border: none;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin: 0px;
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    ._p-add-cart {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .p-list {
+        margin-bottom: 10px;
+    }
+    ._p-features > span {
+        display: block;
+        font-size: 16px;
+        color: #000;
+        font-weight: 500;
+    }
+    ._p-add-cart .buy-btn {
+        background-color: #ab9f9f;
+        color: black;
+    }
+    ._p-add-cart .btn {
+        text-transform: capitalize;
+        padding: 6px 20px;
+        /* width: 200px; */
+        border-radius: 52px;
+    }
+    ._p-add-cart .btn {
+        margin: 0px 8px;
+    }
+    
+    
+    .p-qty .decrease {
+        position: relative;
+        right: -5px;
+        top: 3px;
+    }
+    
+    .p-qty .increase {
+        position: relative;
+        top: 3px;
+        left: -5px;
+    }
+   
+</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color: #ab9f9f;">
+        <img class="m-auto" src="img/logo.png" style="width: 120px;" alt="">
+        <a href="sign-up page.html"><i class="fa fa-right-to-bracket fa-3x text-dark" style="margin-right: 50px;"></i></a>
+   </nav>
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-sm-top">
+       <div class="container">
+           <a class="navbar-brand" href="#"></a>
+          
+           <!-- Toggle button -->
+           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+   
+           <!-- Off-canvas container -->
+           <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="navbarOffcanvas">
+            <div class="offcanvas-header" style="background-color: #ab9f9f;">
+                   <h5 class="offcanvas-title"><img src="sound-blast-low-resolution-logo-black-on-white-background-removebg-preview.png" alt="" height="70px" ></h5>
+                   <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
+               <div class="offcanvas-body ofcolr">
+                   <!-- Navigation links -->
+                   <ul class="navbar-nav m-auto" >
+                       <li class="nav-item  px-3">
+                           <a href="home.html" class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">Home</a>
+                           <ul class="dropdown-menu text-center" style="margin-left: 27% !important ;">
+                             <a class="dropdown-item" href="Index.html">Home</a>
+                             <a class="dropdown-item" href="#adult">Adult Collection</a>
+                             <a class="dropdown-item" href="male cards.html">Kids Male Collection</a>
+                             <a class="dropdown-item" href="female cards.html">Kids Female Collection</a>
+                           </ul>
+                         </li>
+                       <li class="nav-item  px-3">
+                           <a class="nav-link  " href="gallery.html">Gallery</a>
+                       </li>
+                       <li class="nav-item  px-3">
+                           <a class="nav-link  " href="About us.html">About Us</a>
+                       </li>
+                       <li class="nav-item  px-3">
+                           <a class="nav-link  " href="contactus.html">Contact Us</a>
+                       </li>
+                       <li class="nav-item  px-3">
+                           <a class="nav-link  " href="feedback.html">Feedback</a>
+                       </li>
+                       <!-- Add more menu items here -->
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </nav>
+    <section id="services" class="services section-bg">
+        <div class="container-fluid">
+         
+           <div class="row row-sm">
+              <div class="col-md-6 _boxzoom">
+                 <div class="zoom-thumb">
+                    <ul class="piclist">
+                       <li><img src="img/pro3.1.webp" onclick="myFunction(this)" alt=""></li>
+                       <li><img src="img/pro3.2.jpg" onclick="myFunction(this)" alt=""></li>
+                       <li><img src="img/pro3.3.jpg" onclick="myFunction(this)" alt=""></li>
+                       <li><img src="img/pro3.4.jpg" onclick="myFunction(this)" alt=""></li>
+                    </ul>
+                    
+                 </div>
+                 <div class="_product-images">
+                    <div class="picZoomer">
+                       <img  id="imageBox" src="img/m3.jpg" class="img-fluid" style="height: 450px;" alt="">
+                    </div>
+                    
+                 </div>
+              </div>
+              <div class="col-md-6">
+                 <div class="_product-detail-content fontt">
+                    <h4 class="_p-name ">DREAM PAIRS Boys Girls Lightweight Tennis Running Shoes Athletic Sneakers   </h4>
+                    <div class="_p-price-box">
+                       <div class="p-list">
+                          <span> M.R.P. : <i class="fa fa-inr"></i> <del>  $19.80 </del>   </span>
+                          <span class="price"> Rs. $17.83  </span>
+                       </div>
+                       <div class="_p-add-cart">
+                          <div class="_p-qty">
+                             <span>Add Quantity</span>
+                             <div class="value-button decrease_" id="" value="Decrease Value">-</div>
+                             <input type="number" name="qty" id="number" value="1" />
+                             <div class="value-button increase_" id="" value="Increase Value">+</div>
+                          </div>
+                       </div>
+                       <div class="_p-features">
+                          <span> Description About this product:- </span>
+                          These running shoes with the knitted fabric upper offer superior breathability and comfortability for long day playing. In addition, three different knitted patterns make its more stylish and attractiveConstructed with an adjustable velcro strap and elastic laces, these shoes are easy for kids to put on and take off while remaining a customized fit Featuring a MD outsole, these shoes are ultralight and flexible. Besides, the textured outsole safeguards kids from slipping with greater stability, suitable for daily walking, jogging, running, etc                          
+                       </div>
+                       <form action="" method="post" accept-charset="utf-8">
+                          <ul class="spe_ul"></ul>
+                          <div class="_p-qty-and-cart">
+                             <div class="_p-add-cart">
+                                <button class="btn-theme btn buy-btn" tabindex="0">
+                                <i class="fa fa-shopping-cart"></i> Buy Now
+                                </button>
+                                <button class="btn-theme btn btn-outline-success text-dark" tabindex="0">
+                                <i class="fa fa-shopping-cart"></i> Add to Cart
+                                </button>
+                                <input type="hidden" name="pid" value="18" />
+                                <input type="hidden" name="price" value="850" />
+                                <input type="hidden" name="url" value="" />    
+                             </div>
+                          </div>
+                       </form>
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+     <!-- footer -->
+<div class="container-fluid  mt-5 ftbg">
+    <div class="container" >
+    <div class="row  fontt b1 " >
+        <div class="col-lg-3">
+            
+            <img style="width: 200px; margin-top: 20px;" src="img/logo.png" alt="">
+            <p class="mt-4">Discover a world of style and trends at our clothing website, where fashion meets convenience."
+                "Explore a curated collection of top-notch clothing and accessories on our user-friendly online platform."</p>
+        </div>
+        <div class="col-lg-4 mt-4">
+           <h4>Top Categories</h4>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="img/clothes3.webp"
+                        style="height:95px; " width="120px" alt="">
+                </div>
+                <div class="col-lg-4">
+                    <img src="img/clothes2.webp"
+                        style="height:95px; " width="120px" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 mt-2">
+                    <img src="img/clothes1.jpg"
+                        style="height:95px; " width="120px" alt="">
+                </div>
+                <div class="col-lg-4 mt-2">
+                    <img src="img/clothes4.jpg"
+                        style="height:95px; " width="120px" alt="">
+                </div>
+            
+            </div>
+        </div>
+        <div class="col-lg-3 mt-4 ">
+            <h4>Helpful links</h4>
+           <p>Services</p>
+           <p>Supports</p>
+           <p>Terms & Conditiona</p>
+           <p>Privacy & Policy </p>
+           <p>Resources</p>
+        </div>
+      
+        <div class="col-lg-2 mt-4">
+            <h4>Social </h4>
+            <p >help</p>
+            <p>Facebook</p>  
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Email</p>
+  
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  
+  <div class="container-fluid text-center fontt bg-dark text-white ">
+    <p>@copyrigth 2023-made by Haseeb_Chaudhary & Huzaifa_Muzaffar</p>
+  </div>
+   
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script>
+    function myFunction(smallImg){
+        var fullimg = document.getElementById("imageBox");
+        fullimg.src = smallImg.src;
+    }
+</script>
+</body>
+
+</html>
